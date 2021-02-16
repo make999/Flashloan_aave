@@ -17,6 +17,12 @@ contract Flashloan is FlashLoanReceiverBase {
         uint totalDebt = _amount.ad(_fee);
         trasnferFundsBackToPoolInternal(_reserve, totalDebt);
     }
+
+    function flashloan(address _asset) public onlyOwner {
+        // declare variable
+
+        //declare here logic
+    }
 }
 
 // Remaining code ...
